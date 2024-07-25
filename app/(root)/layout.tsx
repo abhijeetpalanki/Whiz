@@ -1,5 +1,14 @@
 import StreamVideoProvider from "@/providers/StreamClientProvider";
+import { Metadata } from "next";
 import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Whiz",
+  description: "Video Conferencing App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
